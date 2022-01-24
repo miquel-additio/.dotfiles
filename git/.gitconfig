@@ -1,10 +1,10 @@
 [user]
 	name = Miquel de Domingo
-	email = miquelddg@gmail.com
+	email = miquel@additioapp.com
 [core]
 	editor = nvim
 [github]
-	user = MikeDedo
+	user = miquel-additio
 [hub]
 	protocol = https
 [color]
