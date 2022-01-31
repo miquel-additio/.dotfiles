@@ -49,10 +49,15 @@ echo "> Installing oh-my-zsh"
 
 [ ! -d $OHMYZSH_PLUGINS/zsh-autosuggestions ] && git_clone zsh-users/zsh-autosuggestions $OHMYZSH_PLUGINS/zsh-autosuggestions
 [ ! -d $OHMYZSH_PLUGINS/zsh-syntax-highlighting ] && git_clone zsh-users/zsh-syntax-highlighting $OHMYZSH_PLUGINS/zsh-syntax-highlighting
+[ ! -d $OHMYZSH_PLUGINS/zsh-better-npm-completion ] && git_clone lukechilds/zsh-better-npm-completion $OHMYZSH_PLUGINS/zsh-better-npm-completion
 
 echo "> Installing powerlevel10k"
 
 [ ! -d $OHMYZSH_THEMES/powerlevel10k ] && git_clone romkatv/powerlevel10k $OHMYZSH_THEMES/powerlevel10k
+
+echo "> Adding NvChad\n"
+
+[ ! -d $HOME/.config/nvim ] && git_clone NvChad/NvChad $HOME/.config/nvim 
 
 echo "> Stowing all packages\n"
 
