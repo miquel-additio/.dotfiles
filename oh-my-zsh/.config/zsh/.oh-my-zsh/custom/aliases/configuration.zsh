@@ -19,14 +19,14 @@ alias ssun="sudo snap remove --purge"
 # yay
 alias updsys="yay -Syyu"
 
-# Alias
-alias web=~/Documents/additio-web
-alias core=~/Documents/additio-core
-alias itools=~/Documents/internal-tools
-alias daily=~/Documents/daily
-alias docker-additio=(web && docker-compose --profile additio up -d)
-alias docker-centers=(web && docker-compose --profile centers up -d)
-alias docker-edvoice=(web && docker-compose --profile edvoice up -d)
+# Additio
+alias web="~/Documents/additio-web"
+alias core="~/Documents/additio-core"
+alias itools="~/Documents/internal-tools"
+alias daily="~/Documents/daily"
+alias docker-additio="(web && docker-compose --profile additio up -d)"
+alias docker-centers="(web && docker-compose --profile centers up -d)"
+alias docker-edvoice="(web && docker-compose --profile edvoice up -d)"
 
 # File manipulation
 mkcd() { mkdir $1 && cd $1 }
