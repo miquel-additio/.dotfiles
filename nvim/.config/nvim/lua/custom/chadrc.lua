@@ -3,10 +3,12 @@ local configs = require('custom.plugins.configs')
 
 -- Custom configurations
 vim.api.nvim_set_option('guicursor', 'i:block')
+vim.cmd('set incsearch')
 vim.cmd('set noshowmode')
 
 M.ui = {
   theme = 'onedark',
+  transparency = true,
   hl_override = 'custom.highlights',
 }
 
@@ -20,6 +22,7 @@ M.plugins = {
     dashboard = true,
     lspkind = true,
     lspsignature = true,
+    nvim_cmp = true,
   },
   default_plugin_config_replace = {
     nvim_treesitter = configs.treesitter,
